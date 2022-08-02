@@ -101,6 +101,7 @@ body {
 /* header css */
 
 .site-header {
+    position: relative;
     background-color: #49BCF1;
 }
 
@@ -169,6 +170,64 @@ body {
 .site-header__nav {
     display: none;
 }
+
+.sitenav-on .sitenav {
+    position: absolute;
+    padding: 35px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 305px;
+    top: 120%;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 12;
+    background-color: #FFFCF8;
+}
+
+.sitenav-on .sitenav__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+}
+
+.sitenav-on .sitenav__item {
+    margin-right: 0;
+    margin-bottom: 32px;
+    z-index: 1;
+}
+
+.sitenav-on .sitenav__decor {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    border-top: 10px solid transparent;
+    border-right: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+    border-left: 10px solid transparent;
+}
+
+.sitenav-on .sitenav__link {
+    line-height: 25px;
+    letter-spacing: -0.142857px;
+    color: #808397;
+}
+
+.sitenav-on .sitenav__contact-link {
+    background-color: #FBD600;
+    z-index: 1;
+    justify-content: center;
+}
+
 
 
 /* hero secion css  */
@@ -453,6 +512,11 @@ body {
 
 /* grid section css  */
 
+.wraper {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 .grid__content {
     width: 100%;
     /* max-width: 300px; */
@@ -669,7 +733,7 @@ body {
 
     .list__item-content {
         width: 100%;
-    
+
     }
 
     .list__content-box {
@@ -679,35 +743,35 @@ body {
         padding-left: 25px;
     }
 
-    .list__content-box--left{
-    padding-left: 40px;
+    .list__content-box--left {
+        padding-left: 40px;
     }
 
-    .list__img-desktop{
-   width: 100%;
-    }
-
-
-    .sitenav__contact-link:hover{
-    color: #fff;
-    opacity: 0.9;
-    background-color: #77CDF5;
+    .list__img-desktop {
+        width: 100%;
     }
 
 
-    .site-footer__list{
-    max-width: 300px;
-    display: flex;
-    justify-content: space-between;
+    .sitenav__contact-link:hover {
+        color: #fff;
+        opacity: 0.9;
+        background-color: #77CDF5;
     }
 
 
-    .site-footer__link:hover{
+    .site-footer__list {
+        max-width: 300px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .site-footer__link:hover {
         color: #FFFFFF;
     }
 
-    .site-footer__social-link:hover{
-    color: #FFFFFF;
+    .site-footer__social-link:hover {
+        color: #FFFFFF;
     }
 
 }

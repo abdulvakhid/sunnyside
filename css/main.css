@@ -674,12 +674,22 @@ body {
         max-width: 665px;
     }
 
+    .list__content {
+        width: 100%;
+    }
+
+    .list__item-img {
+        width: 50%;
+    }
+
     .list__content-box {
+        width: 50%;
         padding-top: 120px;
         padding-right: 7px;
         padding-left: 20px;
         padding-bottom: 120px;
     }
+
 
 
     .list__content--row {
@@ -696,6 +706,10 @@ body {
 
     .list__item-more {
         justify-content: flex-start;
+    }
+
+    .list__cherry {
+        width: 50%;
     }
 
 
